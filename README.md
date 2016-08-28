@@ -10,7 +10,6 @@ Adding QFlask to an existing flask project is fairly simple. Instead of calling 
 
 ```python
 from flask import Flask
-from qflask import QFlask
 
 app = Flask(__name__)
 
@@ -19,6 +18,7 @@ def index():
     return 'Hello World!'
 
 if __name__ == '__main__':
+    from qflask import QFlask
     qflask = QFlask(app)
     qflask.run(title='My QFlask App', zoom=2, threaded=True)
 ```
