@@ -19,9 +19,9 @@ def index():
 
 if __name__ == '__main__':
     from qflask import QFlask
-    qflask = QFlask(app)
-    qflask.run(title='My QFlask App', zoom=2, threaded=True)
+    QFlask(app).run(title='My QFlask App', zoom=2)
 ```
+QFlask takes care of choosing a free port on itself.
 
 ### Possible Parameters for `QFlask.run(...)`:
 | parameter   | description                                      |
