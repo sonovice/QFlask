@@ -6,7 +6,7 @@ QFlask creates a wrapper around a flask application and shows it in a QtWebEngin
 - flask (obviously)
 
 ## Usage
-Adding QFlask to an existing flask project is fairly simple. Instead of calling `Flask.run()`, use a `QFlask` instance:
+Adding QFlask to an existing flask project is fairly simple. Instead of calling `run()` on the flask application directly, wrap a `QFlask` instance around it:
 
 ```python
 from flask import Flask
